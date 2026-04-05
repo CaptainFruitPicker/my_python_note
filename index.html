@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>毕业生作品集 Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <header class="hero container">
+      <span class="tag">New Graduate · Frontend Demo</span>
+      <h1>你好，我是小林 👋</h1>
+      <p class="subtitle">
+        刚毕业，正在寻找前端/全栈机会。这是一个简洁、现代、可扩展的个人展示页示例。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">查看项目</a>
+        <a class="btn btn-ghost" href="#contact">联系我</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="projects" class="card-grid">
+        <article class="card">
+          <p class="card-tag">项目 01</p>
+          <h2>校园二手平台</h2>
+          <p>支持发布、搜索和私聊，帮助同学高效完成闲置交易。</p>
+          <ul>
+            <li>Vue 3 + TypeScript</li>
+            <li>REST API + JWT 登录</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">项目 02</p>
+          <h2>习惯打卡 App</h2>
+          <p>以可视化统计提高自律效率，支持每日提醒和数据导出。</p>
+          <ul>
+            <li>React + Tailwind CSS</li>
+            <li>Supabase 数据存储</li>
+          </ul>
+        </article>
+
+        <article class="card highlight" id="demo-card">
+          <p class="card-tag">互动 Demo</p>
+          <h2>今天的状态如何？</h2>
+          <p>点击按钮可以切换一句“毕业生能量语录”，适合放在个人首页增强互动感。</p>
+          <button id="quote-btn" class="btn btn-primary" type="button">换一句</button>
+          <p id="quote" class="quote"></p>
+        </article>
+      </section>
+
+      <section id="contact" class="contact card">
+        <h2>联系我</h2>
+        <p>📮 Email: hello@example.com</p>
+        <p>🌐 GitHub: github.com/yourname</p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© 2026 小林 · Built with ❤️ for first-job opportunities</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
